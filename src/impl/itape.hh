@@ -106,12 +106,6 @@ namespace yuliy_test_task
     */
     [[nodiscard]] virtual auto size() const -> std::size_t = 0;
 
-    /**
-    * Returns the current position in the tape.
-    *
-    * @return The current position in the tape.
-    */
-    [[nodiscard]] virtual auto position() const -> std::size_t = 0;
 
     /**
     * Returns the filename of the tape.

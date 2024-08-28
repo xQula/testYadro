@@ -36,8 +36,8 @@ auto main(int argc, char* argv[]) -> int try {
   auto const config = *Config::from_pwd();
   common::println("{}", config);
   *algorithm::sort_into(
-    **Tape<int32_t>::create(common::canonicalize(argv[1]), config),
-    **Tape<int32_t>::create(common::canonicalize(argv[2]), config),
+    **BinaryTape<int32_t>::create(common::canonicalize(argv[1]), config),
+    **BinaryTape<int32_t>::create(common::canonicalize(argv[2]), config),
     true
   );
   common::println("Done.");
